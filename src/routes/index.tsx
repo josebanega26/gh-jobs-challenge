@@ -1,9 +1,9 @@
 import React from 'react';
-import Landing from '../pages/Landing';
+import Landing from 'pages/Landing';
 import styled from 'styled-components';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import Banner from '../components/Banner';
+import Header from 'components/Header';
+import Footer from 'components/Footer';
+import Banner from 'components/Banner';
 
 const Layout = styled.div`
   background: #f6f7fb;

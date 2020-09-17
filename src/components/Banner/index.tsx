@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import SearchBox from '../SearchBox';
+import SearchBox from 'components/SearchBox';
 
 const BannerWrapper = styled.div`
   height: 138px;
