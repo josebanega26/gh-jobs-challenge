@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const HeaderWrapper = styled.header`
   font-family: Poppins;
+  padding: 2rem 0;
   color: #282538;
   font-size: 1.5rem;
   p {
