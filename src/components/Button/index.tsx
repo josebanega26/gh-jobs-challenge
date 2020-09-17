@@ -22,14 +22,20 @@ const ButtonWrapper = styled.button`
 `;
 
 interface IButtonProps {
-  onClick?: any;
+  onClick?: Function;
   title: string;
   type: 'button' | 'submit' | 'reset';
 }
 
 export const Button: React.FC<IButtonProps> = ({ onClick, title, type }) => {
   return (
-    <ButtonWrapper type={type} onClick={onClick}>
+    <ButtonWrapper
+      type={type}
+      onClick={(e) => {
+        e.preventDefault();
+        !!onClick && onClick();
+      }}
+    >
       {title}
     </ButtonWrapper>
   );

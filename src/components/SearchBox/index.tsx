@@ -47,16 +47,29 @@ const Search = styled.div`
 
 interface ISearchBoxProps {
   placeholder: string;
+  withButton?: boolean;
+  handlerClick?: Function;
+  handlerSubmit?: Function;
 }
 
-const SearchBox: React.FC<ISearchBoxProps> = ({ placeholder }) => {
+const SearchBox: React.FC<ISearchBoxProps> = ({
+  placeholder,
+  withButton = false,
+  handlerClick,
+  handlerSubmit,
+}) => {
   return (
-    <SearchContainer>
+    <SearchContainer
+      onSubmit={(e) => {
+        e.preventDefault();
+        !!handlerSubmit && handlerSubmit();
+      }}
+    >
       <Search>
         <WorkIcon></WorkIcon>
         <input placeholder={placeholder} type='text' />
       </Search>
-      <Button type='button' title='Search'></Button>
+      {withButton && <Button type='button' title='Search' onClick={handlerClick}></Button>}
     </SearchContainer>
   );
 };
