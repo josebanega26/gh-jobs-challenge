@@ -25,9 +25,7 @@ const AppRoutes = () => {
     <Layout>
       <Header></Header>
       <Banner></Banner>
-      <section>
-        <Landing></Landing>
-      </section>
+      <Landing></Landing>
       <Footer></Footer>
     </Layout>
   );
