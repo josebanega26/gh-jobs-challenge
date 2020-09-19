@@ -2,12 +2,17 @@ import React from 'react';
 import './App.css';
 import AppRoutes from './routes';
 import { ThemeProvider } from 'styled-components';
-import lightTheme from './themes/light';
+import { theme, lightTheme } from './utils/theme';
+
+const defaultTheme = {
+  ...theme,
+  ...lightTheme,
+};
 
 function App() {
   return (
     <div className='App'>
-      <ThemeProvider theme={lightTheme}>
+      <ThemeProvider theme={defaultTheme}>
         <AppRoutes></AppRoutes>
       </ThemeProvider>
     </div>

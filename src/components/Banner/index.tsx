@@ -14,7 +14,7 @@ const BannerWrapper = styled.div`
 const Banner = () => {
   return (
     <BannerWrapper>
-      <SearchBox placeholder='City, state, zip code or country' withButton></SearchBox>
+      <SearchBox placeholder='Title, companies, expertise or benefits' withButton></SearchBox>
     </BannerWrapper>
   );
 };

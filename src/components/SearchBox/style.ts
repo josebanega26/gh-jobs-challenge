@@ -23,10 +23,10 @@ export const Search = styled.div`
   align-items: center;
   width: 100%;
   overflow: hidden;
-  fill: ${(props) => props.theme.colors.gray};
+  fill: ${({ theme }) => theme.colors.gray};
   input {
-    color: ${(props) => props.theme.colors.textPrimary};
-    font-family: ${(props) => props.theme.fonts[1]};
+    color: ${({ theme }) => theme.colors.textPrimary};
+    font-family: ${({ theme }) => theme.fonts.secondary};
     font-size: 12px;
     line-height: 14px;
     padding-left: 10px;
@@ -34,10 +34,10 @@ export const Search = styled.div`
     width: 100%;
     ::placeholder,
     ::-webkit-input-placeholder {
-      color: ${(props) => props.theme.colors.gray};
+      color: ${({ theme }) => theme.colors.gray};
     }
     :-ms-input-placeholder {
-      color: ${(props) => props.theme.colors.gray};
+      color: ${({ theme }) => theme.colors.gray};
     }
   }
 `;
