@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import SearchBox from 'components/SearchBox';
 
 const BannerWrapper = styled.div`
-  height: 138px;
+  min-height: 138px;
   border-radius: 8px;
   background: #3f3f3f;
   display: flex;

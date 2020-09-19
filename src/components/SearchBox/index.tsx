@@ -11,6 +11,7 @@ interface ISearchBoxProps {
   handlerSubmit?: Function;
   width?: string;
   title?: string;
+  margin?: string;
 }
 
 const SearchBox: React.FC<ISearchBoxProps> = ({
@@ -20,11 +21,13 @@ const SearchBox: React.FC<ISearchBoxProps> = ({
   handlerSubmit,
   width,
   title,
+  margin,
 }) => {
   return (
     <React.Fragment>
       {!!title && <SubTitle> {title}</SubTitle>}
       <SearchContainer
+        margin={margin}
         width={width}
         onSubmit={(e) => {
           e.preventDefault();

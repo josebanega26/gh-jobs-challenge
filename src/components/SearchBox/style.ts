@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const SearchContainer = styled.form<{ width?: string }>`
+export const SearchContainer = styled.form<{ width?: string; margin?: string }>`
   height: 55px;
   background: #fff;
   padding: 4px;
@@ -12,6 +12,7 @@ export const SearchContainer = styled.form<{ width?: string }>`
   width: ${({ width }) => width || '66%'};
   transition: all 0.4s;
   overflow: hidden;
+  margin: ${({ margin }) => margin || '0'};
   @media (max-width: 768px) {
     width: 95%;
   }
