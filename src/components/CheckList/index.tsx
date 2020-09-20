@@ -11,7 +11,7 @@ const CheckList: React.FC<ICheckboxListProps> = ({ data = countries }) => {
   return (
     <List>
       {data.map(({ name }) => (
-        <Checkbox label={name} space='1rem'></Checkbox>
+        <Checkbox key={name} label={name} space='1rem'></Checkbox>
       ))}
     </List>
   );

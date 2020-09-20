@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import AppRoutes from './routes';
 import { ThemeProvider } from 'styled-components';
 import { theme, lightTheme } from './utils/theme';

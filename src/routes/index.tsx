@@ -10,7 +10,8 @@ const Layout = styled.div`
   padding: 0 7.5rem;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
+  min-width: 350px;
   section {
     flex-grow: 1;
   }

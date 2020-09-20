@@ -4,7 +4,7 @@ import { Sidebar } from 'common/styles';
 import SearchBox from 'components/SearchBox';
 import Checkbox from 'components/Checkbox';
 import CheckList from 'components/CheckList';
-
+import Card from 'components/Card';
 const Landing = () => {
   return (
     <Section>
@@ -18,7 +18,9 @@ const Landing = () => {
         ></SearchBox>
         <CheckList></CheckList>
       </Sidebar>
-      <main>I'm the main</main>
+      <main>
+        <Card></Card>
+      </main>
     </Section>
   );
 };
