@@ -4,7 +4,9 @@ import { Sidebar } from 'common/styles';
 import SearchBox from 'components/SearchBox';
 import Checkbox from 'components/Checkbox';
 import CheckList from 'components/CheckList';
-import Card from 'components/Card';
+import CardList from 'components/CardList';
+import { mockResponse } from 'api/mockdata';
+
 const Landing = () => {
   return (
     <Section>
@@ -19,7 +21,7 @@ const Landing = () => {
         <CheckList></CheckList>
       </Sidebar>
       <main>
-        <Card></Card>
+        <CardList jobs={mockResponse}></CardList>
       </main>
     </Section>
   );

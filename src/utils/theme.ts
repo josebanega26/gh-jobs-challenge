@@ -5,7 +5,7 @@ export const theme = {
     helper: "'Montserrat', 'sans-serif'",
   },
   size: {
-    sm: '425px',
+    sm: '424px',
     md: '768px',
     lg: '1024px',
   },

@@ -1,11 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 import SearchBox from 'components/SearchBox';
+import bannerBackground from 'assets/images/bannerImg.png';
 
 const BannerWrapper = styled.div`
   min-height: 138px;
   border-radius: 8px;
-  background: #3f3f3f;
+  background-image: url(${bannerBackground});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;

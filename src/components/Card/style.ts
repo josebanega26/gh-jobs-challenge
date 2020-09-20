@@ -7,6 +7,8 @@ export const CardContainer = styled.div`
   border-radius: 4px;
   padding: 12px;
   box-shadow: 0px 2px 4px 0px #00000060;
+  align-items: center;
+  margin-bottom: 2rem;
 `;
 export const ImageContainer = styled.div`
   overflow: hidden;
@@ -25,17 +27,17 @@ export const CompanyName = styled.p`
 
 export const TextContainer = styled.div`
   padding-left: 1rem;
+  flex-grow: 1;
 `;
 
-export const IconWrapper = styled.div`
+export const InfoWrapper = styled.div`
   position: absolute;
-  font-size: 0.75rem;
-  color: ${({ theme }) => theme.colors.gray};
   bottom: 20px;
   right: 12px;
-  span {
-    font-weight: 500;
-    padding-left: 28.5px;
-    font-family: ${({ theme }) => theme.fonts.primary};
+  display: flex;
+  @media (max-width: ${({ theme }) => theme.size.sm}) {
+    position: inherit;
+    display: flex;
+    justify-content: flex-end;
   }
 `;
