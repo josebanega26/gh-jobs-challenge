@@ -1,6 +1,6 @@
-import { IJobs } from 'models/jobs.model';
+import { IJob } from 'models/jobs.model';
 
-export const mockResponse: IJobs[] = [
+export const mockResponse: IJob[] = [
   {
     id: '68b39341-da49-433b-9815-4e14b960925e',
     type: 'Full Time',

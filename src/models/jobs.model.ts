@@ -1,4 +1,4 @@
-export interface IJobs {
+export interface IJob {
   id: string;
   type: string;
   url?: string;

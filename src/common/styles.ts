@@ -18,6 +18,9 @@ export const Title = styled.h4`
   font-size: 1.25rem;
   font-weight: 400;
   padding-bottom: 12px;
+  /* white-space: nowrap; */
+  overflow: hidden;
+  text-overflow: ellipsis;
 `;
 
 export const Tag = styled.p`

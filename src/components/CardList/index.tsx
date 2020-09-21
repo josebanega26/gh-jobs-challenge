@@ -1,5 +1,5 @@
 import React from 'react';
-import { IJobs } from 'models/jobs.model';
+import { IJob } from 'models/jobs.model';
 import styled from 'styled-components';
 import Card from 'components/Card';
 
@@ -10,13 +10,13 @@ const CardsContainer = styled.div`
 `;
 
 interface ICardListProps {
-  jobs: IJobs[];
+  jobs: IJob[];
 }
 const CardList: React.FC<ICardListProps> = ({ jobs }) => {
   return (
     <CardsContainer>
       {jobs.map((job) => (
-        <Card key={job.id}></Card>
+        <Card key={job.id} job={job}></Card>
       ))}
     </CardsContainer>
   );

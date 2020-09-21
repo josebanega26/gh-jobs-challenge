@@ -9,12 +9,18 @@ export const CardContainer = styled.div`
   box-shadow: 0px 2px 4px 0px #00000060;
   align-items: center;
   margin-bottom: 2rem;
+  cursor: pointer;
 `;
 export const ImageContainer = styled.div`
   overflow: hidden;
   border-radius: 8px;
   width: 90px;
+  display: flex;
+  align-items: center;
   height: 90px;
+  img {
+    width: inherit;
+  }
 `;
 
 export const CompanyName = styled.p`
