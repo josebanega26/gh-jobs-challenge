@@ -11,7 +11,7 @@ interface ICardProps {
 }
 const Card: React.FC<ICardProps> = ({ job }) => {
   const { company, type, title, company_logo, location, created_at } = job;
-  getDifference(created_at);
+  const jobPostedDay = getDifference(created_at);
   return (
     <CardContainer>
       <ImageContainer>
@@ -23,7 +23,7 @@ const Card: React.FC<ICardProps> = ({ job }) => {
         <Tag>{type}</Tag>
         <InfoWrapper>
           <InfoMessage text={location} />
-          <InfoMessage icon='clock' text={created_at} />
+          <InfoMessage icon='clock' text={jobPostedDay} />
         </InfoWrapper>
       </TextContainer>
     </CardContainer>
