@@ -6,8 +6,15 @@ import Checkbox from 'components/Checkbox';
 import CheckList from 'components/CheckList';
 import CardList from 'components/CardList';
 import { mockResponse } from 'api/mockdata';
+import { getAllJobs } from 'api/jobsAPI';
 
 const Landing = () => {
+  React.useEffect(() => {
+    const fetchJobs = async () => {
+      await getAllJobs();
+    };
+    fetchJobs();
+  }, []);
   return (
     <Section>
       <Sidebar>

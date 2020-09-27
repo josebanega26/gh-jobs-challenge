@@ -15,7 +15,7 @@ const Card: React.FC<ICardProps> = ({ job }) => {
   return (
     <CardContainer>
       <ImageContainer>
-        <img src={company_logo || placeholder} alt={company} />
+        <img src={company_logo || placeholder} alt={company} loading='lazy' />
       </ImageContainer>
       <TextContainer>
         <CompanyName> {company}</CompanyName>
