@@ -3,11 +3,11 @@ import { IJob } from 'models/jobs.model';
 const PROXY_PATH = 'https://cors-anywhere.herokuapp.com/';
 const BASE_PATH = 'https://jobs.github.com/positions.json';
 
-const params = {
-  description: 'description=',
-  location: 'location=',
-  page: 'page=',
-};
+// const params = {
+//   description: 'description=',
+//   location: 'location=',
+//   page: 'page=',
+// };
 
 export const getAllJobs = async (description?: string, localitation?: string) => {
   try {

@@ -11,25 +11,6 @@ export const CardContainer = styled.div`
   margin-bottom: 2rem;
   cursor: pointer;
 `;
-export const ImageContainer = styled.div`
-  overflow: hidden;
-  border-radius: 8px;
-  width: 90px;
-  display: flex;
-  align-items: center;
-  height: 90px;
-  img {
-    width: inherit;
-  }
-`;
-
-export const CompanyName = styled.p`
-  font-family: ${({ theme }) => theme.fonts.primary};
-  color: ${({ theme }) => theme.colors.textPrimary};
-  font-size: 0.75rem;
-  padding-bottom: 0.5rem;
-  font-weight: 700;
-`;
 
 export const TextContainer = styled.div`
   padding-left: 1rem;
