@@ -3,7 +3,8 @@ import Landing from 'pages/Landing';
 import styled from 'styled-components';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
-import Banner from 'components/Banner';
+import { Router } from '@reach/router';
+import JobsPage from 'pages/JobPage';
 
 const Layout = styled.div`
   background: #f6f7fb;
@@ -12,11 +13,11 @@ const Layout = styled.div`
   flex-direction: column;
   min-height: 100vh;
   min-width: 350px;
-  section {
+  #sections_container {
     flex-grow: 1;
   }
   transition: all 0.4s;
-  @media (max-width: 768px) {
+  @media (max-width: 1023px) {
     padding: 0 0.75rem;
   }
 `;
@@ -25,8 +26,10 @@ const AppRoutes = () => {
   return (
     <Layout>
       <Header></Header>
-      <Banner></Banner>
-      <Landing></Landing>
+      <Router id='sections_container'> 
+        <Landing path='/'></Landing>
+        <JobsPage path='details/:jobId'></JobsPage>
+      </Router>
       <Footer></Footer>
     </Layout>
   );

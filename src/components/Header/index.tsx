@@ -1,25 +1,31 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from '@reach/router';
 
 const HeaderWrapper = styled.header`
   font-family: Poppins;
   padding: 2rem 0;
-  color: #282538;
   font-size: 1.5rem;
-  p {
+
+  a {
+    text-decoration: none;
     font-weight: 700;
-  }
-  small {
+    color: #282538;
+    &:hover{
+      opacity: 0.8
+    }
+     small {
     font-weight: 300;
   }
+}
 `;
 
 const Header = () => {
   return (
     <HeaderWrapper>
-      <p>
+      <Link to='/'>
         Github &nbsp;<small>Jobs</small>
-      </p>
+      </Link>
     </HeaderWrapper>
   );
 };

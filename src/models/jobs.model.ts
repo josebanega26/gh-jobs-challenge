@@ -9,5 +9,5 @@ export interface IJob {
   company_logo: string;
   company_url?: string;
   description?: string;
-  how_to_apply?: string;
+  how_to_apply: string;
 }

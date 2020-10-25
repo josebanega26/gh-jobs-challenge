@@ -36,3 +36,17 @@ export const Tag = styled.p`
   text-align: center;
   width: fit-content;
 `;
+
+export const Text = styled.div`
+  font-family: ${({ theme }) => theme.fonts.secondary};
+  color: ${({ theme }) => theme.colors.textPrimary};
+  font-weight: 500;
+  line-height:21px;
+  a{
+    color: ${({ theme }) => theme.colors.primary};
+    text-decoration:none;
+    &:hover{
+      opacity:0.8;
+    }
+  }
+`;
